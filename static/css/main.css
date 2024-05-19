@@ -1,0 +1,106 @@
+h3 {
+    margin: 5px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+.header-link button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    /* 背景色 */
+    background-color: #2d3436;
+
+    /* 字体颜色 */
+    color: #ffffff;
+
+    /* 边框样式 */
+    border: none;
+    border-radius: 20px;
+
+    /* 按钮尺寸 */
+    padding: 10px 20px;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+.header-link img {
+    height: 24px;
+    width: 24px;
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 20%;
+}
+.intro img {
+    width: 100%;
+}
+
+
+.sample {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+}
+.sample table{
+    text-align: center;
+    vertical-align: middle;
+    border-collapse: collapse;
+    font-size: 18px;
+    margin: 16px 0;
+}
+.sample td {
+    border: 3px solid #dfe4ea;
+    padding: 20px;
+    width: 220px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #FAFAFA;
+    color: #97999c;
+    margin: 20px 0;
+    padding: 60px 20%;
+}
+
+.footer a:hover {
+    color: #3742fa;
+    text-decoration: none;
+}
+
+.footer a {
+    color: #1e90ff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #2f3542;
+}

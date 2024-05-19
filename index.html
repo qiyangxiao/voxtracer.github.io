@@ -1,19 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site on github"
-    />
-    <link rel="apple-touch-icon" href="/logo192.png" />
-    <title>Voxtracer</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    this is a test page
-  </body>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="static/css/main.css"/>
+    <title>Vox Tracer</title>
+</head>
+<body>
+    <div class="header">
+        <h1>VoxTracer：基于VAE-GLOW框架的声纹可追溯性实时语音转换系统</h1>
+        <h3>武汉大学 国家网络安全学院</h3>
+        <h3>第17届全国大学生信息安全竞赛——信息安全作品赛</h3>
+        <div class="header-link">
+            <button><img src="static/media/github.svg" alt="link-icon"/>link1</button>
+            <button><img src="static/media/github.svg" alt="link-icon"/>link2</button>
+            <button><img src="static/media/github.svg" alt="link-icon"/>link3</button>
+        </div>
+    </div>
+
+    <div class="intro">
+        <h2>作品概述</h2>
+        <p>
+            在这个快速变化的数字时代，技术的进步不断推动着我们生活的各个方面。从智能手机到智能家居，从在线教育到远程工作，科技已经渗透到我们日常生活的每一个角落。人工智能的发展尤为引人注目，它不仅改变了我们解决问题的方式，还为创新提供了无限可能。随着机器学习和数据分析技术的不断进步，我们能够更有效地处理大量信息，从而做出更明智的决策。同时，这也带来了新的挑战，比如数据隐私和伦理问题。我们必须在享受科技带来的便利的同时，也要考虑如何负责任地使用这些强大的工具。在这个快速变化的数字时代，技术的进步不断推动着我们生活的各个方面。从智能手机到智能家居，从在线教育到远程工作，科技已经渗透到我们日常生活的每一个角落。人工智能的发展尤为引人注目，它不仅改变了我们解决问题的方式，还为创新提供了无限可能。随着机器学习和数据分析技术的不断进步，我们能够更有效地处理大量信息，从而做出更明智的决策。同时，这也带来了新的挑战，比如数据隐私和伦理问题。我们必须在享受科技带来的便利的同时，也要考虑如何负责任地使用这些强大的工具。
+        </p>
+        <img src="static/media/intro.png" alt="intro-image"/>
+    </div>
+
+    <div class="sample">
+        <h2>溯源流程示例</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td rowspan="2">目标说话人</td>
+                    <td rowspan="2">源说话人</td>
+                    <td colspan="3">溯源流程</td>
+                </tr>
+                <tr>
+                    <td rowspan="1">转换结果</td>
+                    <td rowspan="1">压缩结果</td>
+                    <td rowspan="1">溯源结果</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">
+                        target
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        speaker1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        vc1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        compress1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        trace1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        speaker1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        vc1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        compress1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        trace1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        speaker1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        vc1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        compress1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        trace1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                </tr>
+                <tr>
+                    <td rowspan="1">
+                        speaker1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        vc1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        compress1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                    </td>
+                    <td rowspan="1">
+                        trace1
+                        <audio src="static/media/sample.wav" controls style="width: 100%;"></audio>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <div class="footer-title">
+            <img src="logo.png" alt="footer-logo" style="height: 28px; width: 28px;"/>
+            <span>Vox Tracer——声纹可追溯性实时语音转换系统</span>
+        </div>
+
+        <div>
+            页面由<a href="https://pages.github.com/" target="_blank">GitHub Pages</a>托管代理，仅作为示例展示。
+        </div>
+        
+        <div>
+            页面UI由<a href="https://pages.github.com/" target="_blank">VoxTracer开发团队</a>设计完成，这里是我们的页面源代码：
+            <a href="https://github.com/qiyangxiao/voxtracer.github.io" target="_blank">https://github.com/qiyangxiao/voxtracer.github.io</a>
+        </div>
+    </div>
+</body>
 </html>
